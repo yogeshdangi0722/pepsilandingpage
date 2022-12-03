@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Demo Pepsi</title>
+</head>
+<body>
+    <section>
+        <div class="header">
+            <div class="logoContainer">
+                <img src="asset/logo.png" alt="logo">
+            </div>
+            <div class="navButton">
+                <ul>
+                    <li><a href="#"><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Whats New</a></li>
+                    <li><a href="#">News Letter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>That's what<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Commodi in cum ullam amet corporis rem pariatur quod earum iusto nulla.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque autem dolor excepturi suscipit? Possimus error dolor consequuntur molestias saepe?</p>
+                <a href="#">view all product</a>
+            </div>
+            <div class="imgbox">
+                <img src="asset/pepsi001.png" alt="" id="logoImg" >
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="asset/pepsi001.png" alt="" onclick="changeImage(`asset/pepsi001.png`)"></li>
+            <li><img src="asset/pepsi002.png" alt="" onclick="changeImage(`asset/pepsi002.png`)"></li>
+            <li><img src="asset/pepsi003.png" alt="" onclick="changeImage(`asset/pepsi003.png`)"></li>
+        </ul>
+
+    </section>
+</body>
+
+<script>
+    const changeImage=(newImg)=>{
+        let img = document.getElementById("logoImg");
+        img.src=newImg;
+    }
+</script>
+</html>
