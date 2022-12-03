@@ -8,7 +8,7 @@
     <title>Demo Pepsi</title>
 </head>
 <body>
-    <section>
+    <section id="sec">
         <div class="header">
             <div class="logoContainer">
                 <img src="asset/logo.png" alt="logo">
@@ -37,9 +37,9 @@
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="asset/pepsi001.png" alt="" onclick="changeImage(`asset/pepsi001.png`)"></li>
-            <li><img src="asset/pepsi002.png" alt="" onclick="changeImage(`asset/pepsi002.png`)"></li>
-            <li><img src="asset/pepsi003.png" alt="" onclick="changeImage(`asset/pepsi003.png`)"></li>
+            <li><img src="asset/pepsi001.png" alt="" onclick="changeImage(`asset/pepsi001.png`); changecolor('#0062be')"></li>
+            <li><img src="asset/pepsi002.png" alt="" onclick="changeImage(`asset/pepsi002.png`);changecolor('#e60c2c')"></li>
+            <li><img src="asset/pepsi003.png" alt="" onclick="changeImage(`asset/pepsi003.png`);changecolor('#1e1e1e')"></li>
         </ul>
 
     </section>
@@ -50,5 +50,8 @@
         let img = document.getElementById("logoImg");
         img.src=newImg;
     }
+     function changecolor(color){
+        document.getElementById("sec").style.background=color;
+     }
 </script>
 </html>
